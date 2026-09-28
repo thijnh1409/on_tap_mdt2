@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập Điện Tử Cơ Bản 2 - Chương 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; }
+        .correct-answer { background-color: #d1fae5; border-color: #10b981; color: #065f46; border-radius: 0.375rem; padding: 0.25rem 0.5rem; }
+        .wrong-answer { background-color: #fee2e2; border-color: #ef4444; color: #991b1b; border-radius: 0.375rem; padding: 0.25rem 0.5rem; }
+        .missed-answer { background-color: #fef3c7; border-color: #f59e0b; color: #92400e; border-radius: 0.375rem; padding: 0.25rem 0.5rem; }
+        .option-label { display: block; padding: 0.5rem; border-radius: 0.375rem; border: 1px solid transparent; cursor: pointer; transition: all 0.2s; }
+        .option-label:hover { background-color: #e5e7eb; }
+        input[type="radio"] { margin-right: 0.5rem; margin-top: 0.3rem; }
+    </style>
+</head>
+<body class="text-gray-800 p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 md:p-10 rounded-xl shadow-lg">
+        <h1 class="text-3xl font-bold text-center text-blue-700 mb-2">Trắc Nghiệm Chương 1</h1>
+        <p class="text-center text-gray-500 mb-8">Thứ tự câu hỏi và đáp án được xáo trộn ngẫu nhiên mỗi lần tải lại trang.</p>
+
+        <div id="quiz-container" class="space-y-8">
+            <!-- Câu hỏi sẽ render vào đây -->
+        </div>
+
+        <div class="mt-10 border-t pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <button id="submit-btn" class="w-full md:w-auto px-8 py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition shadow-md">
+                Nộp Bài & Kiểm Tra
+            </button>
+            <div id="score-display" class="text-xl font-bold text-gray-700 hidden">
+                Điểm: <span id="score-value" class="text-blue-600">0</span> / <span id="total-value">0</span>
+            </div>
+            <button id="retry-btn" class="w-full md:w-auto px-8 py-3 bg-gray-500 text-white font-bold rounded-lg hover:bg-gray-600 transition shadow-md hidden">
+                Làm Lại Từ Đầu
+            </button>
+        </div>
+    </div>
+
+    <!-- 1. IMPORT DATA CHƯƠNG 2 -->
+    <script src="js/data_chuong2.js"></script>
+
+    <!-- 2. KHAI BÁO MẢNG CÂU HỎI CHO ENGINE XỬ LÝ -->
+    <script>
+        const originalQuestions = [...dataChuong2];
+    </script>
+
+    <!-- 3. IMPORT ENGINE LOGIC -->
+    <script src="js/quiz_engine.js"></script>
+</body>
+</html>
