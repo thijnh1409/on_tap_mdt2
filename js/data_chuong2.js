@@ -13,10 +13,10 @@ const dataChuong2 = [
     {
         question: "Để công suất ra tải cực đại phải phối hợp trở kháng giữa điện trở nguồn và tải thoả yêu cầu nào sau đây",
         options: [
-            "a. \\(R_{S}=R_{L}\\)",
-            "b. \\(R_{S}>>R_{L}\\)",
-            "c. \\(R_{S}<<R_{L}\\)",
-            "d. cả a, b và c sai"
+            "a. \\(R_{S} = R_{L}\\)",
+            "b. \\(R_{S} \\gg R_{L}\\)",
+            "c. \\(R_{S} \\ll R_{L}\\)",
+            "d. Cả a, b và c sai"
         ],
         answer: 0
     },
